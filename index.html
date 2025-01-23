@@ -8,6 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />       
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header>
@@ -29,7 +30,7 @@
     <main>
         <section id="Home">
             <div class="container home">
-                <div class="profile-info">
+                <div class="profile-info" id="profile-info-id">
                     <h1>Olá, eu sou Vinicius!</h1>
                     <h2>Desenvolvedor</h2>
                     <p>
@@ -48,7 +49,7 @@
                         <button>Baixar Currículo</button>
                     </div>
                 </div>
-                <div class="profile-info-image"></div>
+                <div class="profile-info-image" id="profile-info-image-id"></div>
             </div>
         </section>
 
@@ -126,7 +127,7 @@
             <h1>Projetos</h1>
             <div class="container projects">
                 <div class="projects-container">
-                    <div class="project-content">
+                    <div class="project-content left">
                         <div class="projects-image login">
                             <div class="project-info-hidden">
                                 <p>Sistema de login completo utilizando Java e Spring Boot com validações e conexão com banco de dados.</p>
@@ -143,7 +144,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
+                    <div class="project-content right">
                         <div class="projects-image landing">
                             <div class="project-info-hidden">
                                 <p>Página estática para um site de downloads de fotos chamado PHOTOFELIX.</p>
@@ -160,7 +161,7 @@
                     </div>
                 </div>
                 <div class="projects-container">
-                    <div class="project-content">
+                    <div class="project-content left">
                         <div class="projects-image host">
                             <div class="project-info-hidden">
                                 <p>Página estática demonstrando o processo de hospedagem de um site em servidores web.</p>
@@ -175,7 +176,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
+                    <div class="project-content right">
                         <div class="projects-image e-commerce">
                             <div class="project-info-hidden">
                                 <p>Sistema de e-commerce funcional com cadastro de produtos e carrinho de compras.</p>
@@ -193,7 +194,7 @@
                     </div>
                 </div>
                 <div class="projects-container">
-                    <div class="project-content">
+                    <div class="project-content left">
                         <div class="projects-image whatsapp">
                             <div class="project-info-hidden">
                                 <p>Página estática de mensagens inspirada no WhatsApp, com design responsivo.</p>
@@ -208,7 +209,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
+                    <div class="project-content right">
                         <div class="projects-image doceria">
                             <div class="project-info-hidden">
                                 <p>Página estática para uma doceria com apresentação de produtos e cardápio online.</p>
@@ -230,7 +231,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,64L60,80C120,96,240,128,360,117.3C480,107,600,53,720,69.3C840,85,960,171,1080,186.7C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" data-darkreader-inline-fill=""></path></svg>
         <section id="Contato">
             <h1>Entre em contato!</h1>
-            <form action="">
+            <form action="" id="form-contact-id">
                 <div class="input-container">
                     <input type="text" placeholder="Nome">
                     <input type="text" placeholder="Email">
@@ -247,7 +248,7 @@
 
     <footer>
         <div class="container footer">
-            <div class="footer-content">
+            <div class="footer-content" id="footer-content-id">
                 <h1>Navegar</h1>
                 <ul>
                     <li><a href="#Home">Home</a></li>
@@ -257,7 +258,7 @@
                 </ul>
             </div>
         </div>
-        <p>Copyright © 2025 Vinicius. Todos os direitos reservados.</p>
+        <p id="footer-paragraph-id">Copyright © 2025 Vinicius. Todos os direitos reservados.</p>
     </footer>
     <div id="spinner"></div>
     <div id="to-top-container" onclick="toTop()">
