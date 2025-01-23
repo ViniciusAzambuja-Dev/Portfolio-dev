@@ -80,3 +80,11 @@ function initializeScrollReveal() {
             reset: true  
         });
 }
+
+/*function menu */
+
+function clickMenu() {
+    let menu = document.querySelector('.menu');
+
+    menu.classList.toggle('active')
+}

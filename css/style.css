@@ -127,22 +127,20 @@ header{
         font-size: 20px;
     }
 
-    nav{
+    .menu{
+        display: flex;
+        gap: 20px;
         text-align: end;
     }   
-        nav a{
+        .menu a{
             font-weight: 400;
         }
-        nav a, header .bx-menu{
+        .menu a, header .bx-menu{
             color: var(--white-color);
             transition: color 0.5s;
         }
-        nav a:hover, header .bx-menu:hover{
+        .menu a:hover, header .bx-menu:hover{
             color: var(--secondary-color);
-        }
-        nav li {
-            display: inline-block;
-            margin-left: 25px;
         }
 
 /*--------------------Home---------------------------*/
@@ -574,14 +572,32 @@ footer h1, .footer-content a{
 @media (max-width: 775px){
     
     header .bx-menu{
+        display: block;
         font-size: 20px;
     }
 
-    nav {
+    .menu {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 62px;
+        top: 48px;
+        gap: 0;
     }
-        header .bx-menu {
-            display: block;
+        .menu li {
+            border-bottom: 1px solid var(--black-color);
+            padding: 5px 10px 5px 30px;
+        }
+        .menu li:last-of-type {
+            border-bottom: none;
+        }
+        .menu a {
+            color: var(--black-color);
+            font-size: 12px;
+        }
+        .menu.active {
+            display: flex;
+            background-color: var(--white-color);
         }
 
     #Home {
