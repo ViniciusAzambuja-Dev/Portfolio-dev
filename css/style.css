@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --primary-color: rgb(91, 188, 245); 
-    --secondary-color: rgb(0, 255, 255); 
-    --tertiary-color: rgb(36, 166, 218);
-    --primary-bg-color: #081b29;     
+    --primary-color: #5BBCF5; 
+    --secondary-color: #00FFFF; 
+    --primary-bg-color: #081B29;     
     --secondary-bg-color: #143146;        
     --white-color: white;        
     --shadow-first-color: rgba(190, 171, 171, 0.2);  
@@ -12,7 +11,6 @@
     --shadow-third-color: rgba(0, 0, 0, 0.3);
     --shadow-fourth-color: rgba(0, 0, 0, 0.25);      
     --black-color: black;  
-    --project-button-color: rgb(0, 110, 255); 
     --form-placeholder-color: #b0b0b0; 
     --footer-text-color: #d1d1d1;  
 }
@@ -265,7 +263,6 @@ header{
         padding: 20px;
         background-color: var(--secondary-bg-color);
         border-radius: 15px;
-        border: 2px solid var(--secondary-color);
         transition: transform 0.5s;
     }
     .project-content:hover {
@@ -315,8 +312,9 @@ header{
         cursor: pointer;
         font-size: 12px;
         font-weight: 700;
-        background-color:var(--project-button-color);
+        background-color:var(--primary-color);
         border-radius: 20px;
+        color: var(--black-color);
         width: 160px;
         padding: 10px 0;
         transition: opacity 0.8s ease-in-out, bottom 0.5s ease-in-out;
@@ -328,7 +326,7 @@ header{
     .project-info-hidden p {
         font-size: 12px;
     }
-    .project-info-hidden a,  .project-info-hidden p {
+    .project-info-hidden p {
         color: var(--white-color);
     }
         .project-content:hover .project-info-hidden {
@@ -351,14 +349,14 @@ header{
         font-size: 25px;
         margin-left: 10px;
         color: var(--white-color);
-        border: 2px solid var(--secondary-color);
+        border: 2px solid var(--white-color);
         border-radius: 50%;
         padding: 6px;
         cursor: pointer;
         transition: background-color 0.5s;
     }
     .projects-icons-content i:hover {
-        background-color: var(--tertiary-color);
+        background-color: var(--primary-color);
     }
     .projects-icons-content{
         float: right;
@@ -425,18 +423,16 @@ footer h1, .footer-content a{
         .footer-content {
             border: 2px solid var(--white-color);
             border-radius: 70px;
-            padding: 15px 25px;
+            padding: 20px 35px;
         }
         .footer-content li{
             display: inline-block;
-            padding: 5px 0;
         }
         .footer-content a, .footer-content span {
             color: var(--footer-text-color);
         }
         .footer-content a {
-            margin: 10px 10px 0 10px;
-            padding-bottom: 10px;
+            padding: 10px;
             transition: border-bottom 0.8s ease;
             border-bottom: 2px solid transparent;
         }
@@ -619,6 +615,7 @@ footer h1, .footer-content a{
             padding: 5px 0;
         }
         .footer-content a {
+            padding: 5px;
             font-size: 15px;
         }
 
