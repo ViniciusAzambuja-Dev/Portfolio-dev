@@ -48,10 +48,14 @@ h1, h2 {
     color: var(--white-color);
 }
 
+svg path {
+    fill: var(--secondary-bg-color);
+}
+
 /*-------------Container generic--------------*/
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
 }
@@ -82,19 +86,29 @@ h1, h2 {
 /*---------------Sections-----------------*/
 
 #Home {
-    padding: 120px 60px;
+    padding: 120px 60px 0 60px;
 }
-#Habilidades, #Projetos, #Contato, footer {
-    padding: 70px 60px;
+#Habilidades, #Contato {
+    margin-top: -12px;
+}
+
+#Habilidades, #Projetos, #Contato {
+    padding: 0 60px;
 }
 #Habilidades h1, #Projetos h1, #Contato h1 {
     margin-bottom: 30px;
     text-align: center;
 }
 
-header, #Habilidades, #Contato{
+header, #Habilidades, #Contato, footer{
     background-color: var(--secondary-bg-color);
 }
+
+footer {
+    text-align: center;
+    padding: 120px 0 30px 0;
+}
+
 
 /*--------------------Header---------------------------*/
 
@@ -396,13 +410,10 @@ form {
 
 /*--------------------Footer---------------------------*/
 
-footer {
-    padding: 30px 0 30px 0;
-    text-align: center;
+
+footer h1, .footer-content a{
+    font-size: 20px;
 }
-    footer h1, .footer-content a{
-        font-size: 20px;
-    }
     footer p {
         margin-top: 50px;
         color: var(--white-color);
@@ -423,7 +434,7 @@ footer {
             transition: color 0.3s;
             margin: 10px 10px 0 10px;
             padding-bottom: 10px;
-            transition: 0.8s ease;
+            transition: border-bottom 0.8s ease;
             border-bottom: 2px solid transparent;
         }
         .footer-content a:hover {
