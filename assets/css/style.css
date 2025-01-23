@@ -87,15 +87,11 @@ svg path {
 
 /*---------------Sections-----------------*/
 
-#Home {
-    padding: 120px 60px 0 60px;
+#Home, #Habilidades, #Projetos, #Contato {
+    padding: 120px 60px;
 }
 #Habilidades, #Contato {
     margin-top: -12px;
-}
-
-#Habilidades, #Projetos, #Contato {
-    padding: 0 60px;
 }
 #Habilidades h1, #Projetos h1, #Contato h1 {
     margin-bottom: 30px;
