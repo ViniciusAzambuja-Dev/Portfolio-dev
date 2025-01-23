@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --secondary-color: rgb(0, 255, 255); 
+    --primary-bg-color: #081b29;     
+    --secondary-bg-color: #143146;        
+    --white-color: white;                  
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    border: none;
+}
+body{
+    background-color: var(--primary-bg-color);
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 25px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+h1, h2 {
+    color: var(--white-color);
+}
+
+/*-------------Container generic--------------*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container.header{
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    background-color: var(--secondary-bg-color);
+}
+
+/*--------------------Header---------------------------*/
+
+header{
+    width: 100%;
+    padding: 20px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+    header .bx-menu {
+        display: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    nav{
+        text-align: end;
+    }   
+        nav a{
+            font-weight: 400;
+        }
+        nav a, header .bx-menu{
+            color: var(--white-color);
+            transition: color 0.5s;
+        }
+        nav a:hover, header .bx-menu:hover{
+            color: var(--secondary-color);
+        }
+        nav li {
+            display: inline-block;
+            margin-left: 25px;
+        }
