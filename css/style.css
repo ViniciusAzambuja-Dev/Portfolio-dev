@@ -510,3 +510,28 @@ footer h1, .footer-content a{
 #to-top-container:hover {
     transform: translateY(-5px);
 }
+
+/*-----------------Media Desktops-------------------*/
+
+@media (max-width: 1100px){
+
+    .profile-info h1{
+        font-size: 28px;
+    }
+    .profile-info h2 {
+        font-size: 25px;
+    }
+    .profile-info-button button {
+        width: 150px;
+        font-size: 10px;
+    }
+    .profile-info-image {
+        min-width: 220px;
+        height: 220px;
+        background-position: center;
+    }
+
+    .container.skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
