@@ -249,13 +249,9 @@ header{
     box-shadow: 0 8px 16px 0 var(--shadow-third-color), 
     0 10px 20px 0 var(--shadow-fourth-color);
     background-color: var(--white-color);
-    transition: transform 0.8s;
     cursor: pointer;
     text-align: center;
 }
-    .skill-content:hover {
-        transform: scale(1.05);
-    }
     .skill-content i {
         font-size: 40px;
     }
@@ -282,10 +278,6 @@ header{
         padding: 20px;
         background-color: var(--secondary-bg-color);
         border-radius: 15px;
-        transition: transform 0.5s;
-    }
-    .project-content:hover {
-        transform: scale(1.05);
     }
     
 .projects-image {
