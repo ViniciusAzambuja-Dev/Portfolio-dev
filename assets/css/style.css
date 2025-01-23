@@ -343,7 +343,7 @@ header{
         transform: translateX(-50%);
     }
     .project-info-hidden p {
-        font-size: 12px;
+        font-size: 14px;
     }
     .project-info-hidden p {
         color: var(--white-color);
@@ -684,6 +684,10 @@ footer h1, .footer-content a{
     
     #Habilidades {
         padding: 0 60px;
+    }
+
+    .project-info-hidden p, .project-info-hidden a{
+        font-size: 10px !important;
     }
 
     form button {
