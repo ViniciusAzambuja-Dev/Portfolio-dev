@@ -87,15 +87,11 @@ svg path {
 
 /*---------------Sections-----------------*/
 
-#Home {
-    padding: 120px 60px 0 60px;
+#Home, #Habilidades, #Projetos, #Contato {
+    padding: 120px 60px;
 }
 #Habilidades, #Contato {
     margin-top: -12px;
-}
-
-#Habilidades, #Projetos, #Contato {
-    padding: 0 60px;
 }
 #Habilidades h1, #Projetos h1, #Contato h1 {
     margin-bottom: 30px;
@@ -116,11 +112,16 @@ footer {
 
 header{
     width: 100%;
-    padding: 20px 60px;
+    padding: 15px 60px;
     position: sticky;
     top: 0;
     z-index: 1;
 }
+
+    header img {
+        width: 60px;
+        height: 47px;
+    }
     header .bx-menu {
         display: none;
         cursor: pointer;
@@ -129,7 +130,7 @@ header{
 
     .menu{
         display: flex;
-        gap: 20px;
+        gap: 40px;
         text-align: end;
     }   
         .menu a{
@@ -146,12 +147,15 @@ header{
 /*--------------------Home---------------------------*/
 
 .profile-info h1{
-    font-size: 42px;
+    font-size: 50px;
 }
 .profile-info h2 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
     color: var(--primary-color);
+}
+.profile-info h1, .profile-info h2{
+    transition: font-size 0.3s ease-in-out;
 }
 .profile-info p {
     font-size: 15px;
@@ -164,7 +168,7 @@ header{
 }
     .profile-info-icons a>i {
         color: var(--primary-color);
-        transition: 1.1s;
+        transition: transform 1.1s, color 0.8s, font-size 0.3s ease-in-out;
     }
     .profile-info-icons a>i:hover {
         transform: scale(1.1);
@@ -176,19 +180,20 @@ header{
         .profile-info-icons a:last-of-type{
             margin-left: 30px;
         }
-        .profile-info-icons i {
-            font-size: 25px;
+        .profile-info-icons a>i {
+            font-size: 30px;
         }
     
 .profile-info-image{
-    min-width: 280px;
-    height: 280px;
+    min-width: 300px;
+    height: 300px;
     border-radius: 50%;
     background-image: url('../img/home_picture.jpeg');
     background-size: cover;
     background-position: 0 -60px;
     background-repeat: no-repeat;
     animation: imageMove 5s ease-in-out infinite;
+    transition: min-width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .profile-info-button button {
@@ -201,7 +206,7 @@ header{
     background-color:var(--primary-color);
     border-radius: 20px;
     cursor: pointer;
-    transition: transform 0.5s;
+    transition: transform 0.5s, width 0.5s ease-in-out, font-size 0.5s ease-in-out;
 }
 .profile-info-button button:hover{
     transform: scale(0.95);
@@ -338,7 +343,7 @@ header{
         transform: translateX(-50%);
     }
     .project-info-hidden p {
-        font-size: 12px;
+        font-size: 14px;
     }
     .project-info-hidden p {
         color: var(--white-color);
@@ -510,30 +515,27 @@ footer h1, .footer-content a{
     bottom: 30px;
     border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.5s;
 }
 
 #to-top-container i {
     color: var(--black-color);
 }
-
-#to-top-container:hover {
-    transform: translateY(-5px);
-}
-
 /*-----------------Media Desktops-------------------*/
 
 @media (max-width: 1100px){
 
     .profile-info h1{
-        font-size: 28px;
+        font-size: 35px;
     }
-    .profile-info h2 {
-        font-size: 25px;
+    .profile-info h2{
+        font-size: 30px;
     }
     .profile-info-button button {
         width: 150px;
-        font-size: 10px;
+        font-size: 12px;
+    }
+    .profile-info-icons a>i {
+        font-size: 25px;
     }
     .profile-info-image {
         min-width: 220px;
@@ -620,13 +622,19 @@ footer h1, .footer-content a{
             min-width:170px;
             height: 170px;
         }
+        .profile-info h1{
+            font-size: 28px;
+        }
+        .profile-info h2{
+            font-size: 25px;
+        }
         .profile-info-icons {
             width: 100%;
         }
         .profile-info-icons .fa-hand-point-left {
             display: none;
         }       
-        .profile-info p, .project-info-hidden p, .project-info-hidden a{
+        .profile-info p{
             font-size: 10px !important;
         }
 
@@ -670,6 +678,10 @@ footer h1, .footer-content a{
     
     #Habilidades {
         padding: 0 60px;
+    }
+
+    .project-info-hidden p, .project-info-hidden a{
+        font-size: 10px !important;
     }
 
     form button {
