@@ -12,7 +12,8 @@
     --shadow-third-color: rgba(0, 0, 0, 0.3);
     --shadow-fourth-color: rgba(0, 0, 0, 0.25);      
     --black-color: black;  
-    --project-button-color: rgb(0, 110, 255);  
+    --project-button-color: rgb(0, 110, 255); 
+    --form-placeholder-color: #b0b0b0; 
 }
 
 *{
@@ -74,15 +75,15 @@ h1, h2 {
 #Home {
     padding: 120px 60px;
 }
-#Habilidades, #Projetos {
+#Habilidades, #Projetos, #Contato {
     padding: 70px 60px;
 }
-#Habilidades h1, #Projetos h1 {
+#Habilidades h1, #Projetos h1, #Contato h1 {
     margin-bottom: 30px;
     text-align: center;
 }
 
-header, #Habilidades{
+header, #Habilidades, #Contato{
     background-color: var(--secondary-bg-color);
 }
 
@@ -340,3 +341,51 @@ header{
     .projects-icons-content{
         float: right;
     }
+
+/*--------------------Contato---------------------------*/
+
+#Contato h1 {
+    margin-bottom: 30px;
+}
+form {
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto;
+}
+    form button {
+        padding: 10px 25px;
+        border-radius: 25px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: var(--primary-color);
+        margin-top: 10px;
+        transition: transform 0.5s;
+    }
+    form button:hover{
+        transform: scale(0.95);
+    }
+    
+    .input-container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+        input{
+            width: 49%;
+        }
+        input, textarea, form button{
+            outline: none;
+        }
+        input, textarea{
+            border-radius: 8px;
+            padding: 10px;
+            background-color: var(--primary-bg-color);
+            color: var(--white-color);
+        }
+        input::placeholder, textarea::placeholder {
+            color: var(--form-placeholder-color);
+        }
+        textarea {
+            resize: none;
+            width: 100%;
+        }
