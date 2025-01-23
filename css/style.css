@@ -247,7 +247,6 @@ header{
     0 10px 20px 0 var(--shadow-fourth-color);
     background-color: var(--white-color);
     transition: transform 0.8s;
-    flex: 1 1 200px;
     cursor: pointer;
     text-align: center;
 }
