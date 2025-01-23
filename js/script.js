@@ -31,6 +31,8 @@ function initializeScrollReveal() {
         document.getElementById('form-contact-id'),
         document.getElementById('footer-content-id'),
         document.getElementById('footer-paragraph-id'),
+        document.getElementById('to-top-container'),
+        document.getElementById('profile-info-image-id'),
         ...document.querySelectorAll('.skill-content'),
     ];
 
