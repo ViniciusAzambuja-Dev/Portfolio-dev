@@ -56,25 +56,28 @@ h1, h2 {
     display: flex;
 }
 
-.container.header{
-    align-items: center;
-    justify-content: space-between;
-}
-
-.container.home{
-    gap: 50px;
-}
-.container.skills, .container.projects, .container.footer{
-    flex-direction: column;
-}
-.container.projects {
-    gap: 30px;
-}
-
-.container.footer{
-    flex-wrap: wrap;
-    align-items: center;
-}
+    .container.header{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container.home{
+        gap: 50px;
+    }
+    .container.skills {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap:30px ;
+    }
+    .container.projects, .container.footer{
+        flex-direction: column;
+    }
+    .container.projects {
+        gap: 30px;
+    }
+    .container.footer{
+        flex-wrap: wrap;
+        align-items: center;
+    }
 
 /*---------------Sections-----------------*/
 
@@ -208,35 +211,30 @@ header{
 
 /*--------------------Habilidades---------------------------*/
 
-.skills-container{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    gap: 25px;
+
+.skill-content {
+    padding: 35px 25px;
+    box-shadow: 0 8px 16px 0 var(--shadow-third-color), 
+    0 10px 20px 0 var(--shadow-fourth-color);
+    background-color: var(--white-color);
+    transition: transform 0.8s;
+    flex: 1 1 200px;
+    cursor: pointer;
+    text-align: center;
 }
-    .skill-content {
-        padding: 35px 25px;
-        box-shadow: 0 8px 16px 0 var(--shadow-third-color), 
-        0 10px 20px 0 var(--shadow-fourth-color);
-        background-color: var(--white-color);
-        transition: transform 0.8s;
-        flex: 1 1 200px;
-        cursor: pointer;
-        text-align: center;
+    .skill-content:hover {
+        transform: scale(1.05);
     }
-        .skill-content:hover {
-            transform: scale(1.05);
-        }
-        .skill-content i {
-            font-size: 40px;
-        }
-        .skill-content h2{
-            margin: 10px 0;
-            color: var(--black-color);
-        }
-        .skill-content p {
-            font-size: 10px;
-        }
+    .skill-content i {
+        font-size: 40px;
+    }
+    .skill-content h2{
+        margin: 10px 0;
+        color: var(--black-color);
+    }
+    .skill-content p {
+        font-size: 13px;
+    }
 
 
 /*--------------------Projetos---------------------------*/
