@@ -626,3 +626,26 @@ footer h1, .footer-content a{
             display: none;
         }
 }
+
+/*----------Media Mobile-------------*/
+
+@media (max-width: 530px){
+ 
+    h1 {
+        font-size: 20px !important;
+    }
+    .profile-info h2{
+        font-size: 18px;
+    }
+    
+    #Habilidades {
+        padding: 0 60px;
+    }
+
+    form button {
+        font-size: 12px;
+    }
+    footer p {
+        margin-top: 20px;
+    }
+}
