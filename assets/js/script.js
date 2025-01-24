@@ -33,6 +33,7 @@ function initializeScrollReveal() {
         document.getElementById('footer-paragraph-id'),
         document.getElementById('to-top-container'),
         document.getElementById('profile-info-image-id'),
+        ...document.querySelectorAll('.section-titles'),
         ...document.querySelectorAll('.skill-content'),
     ];
 
